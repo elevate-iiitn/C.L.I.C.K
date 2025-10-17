@@ -65,19 +65,20 @@ export default function HomePage({ onNavigate }: HomePageProps) {
     <div className="bg-white">
       <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-slate-900 text-white pt-32 pb-20">
         <div className="absolute inset-0 bg-black opacity-10"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-left max-w-4xl mx-auto justify-left">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-                  <span className="text-white">"We are committed to </span>
-                  <span className="text-accent-gold">building your career</span>
+        <div className="max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-left max-w-4xl justify-left">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-10 leading-tight">
+                  <span className="text-white">"We are committed <br /> to building your <br /></span>
+                  <span className="text-yellow-400">career</span>
                   <span className="text-white"> and </span>
-                  <span className="text-accent-gold">amplifying your growth</span>
+                  <span className="text-white"> <br></br>amplifying <br /> your </span>
+                  <span className="text-yellow-400">growth </span>
                   <span className="text-white">."</span>  
                 </h1>
             <p className="text-xl md:text-2xl font-semibold text-white/90 mb-8">
                   – Krishna & Sameer, Founders of CLICK
                 </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4">
               <button
                 onClick={() => onNavigate('contact')}
                 className="px-8 py-4 bg-emerald-600 text-white rounded-lg text-lg font-semibold hover:bg-emerald-700 transition-all transform hover:scale-105 shadow-lg"
