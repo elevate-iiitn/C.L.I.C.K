@@ -7,6 +7,8 @@ export default {
         'accent-gold': '#FFD700',
         'midnight-blue': '#0a0a33',
         'soft-gray': '#f5f5f5',
+        
+        
       },
     },
   },

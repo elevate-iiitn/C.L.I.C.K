@@ -99,7 +99,7 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
                       
                       {/* Dropdown */}
                       <div
-                        className={`absolute top-full left-0 mt-2 w-56 transition-all duration-300 ${
+                        className={`absolute top-full left-0 mt-2 w-56 transition-all duration-600 ${
                           isServicesOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-2 pointer-events-none'
                         }`}
                       >
