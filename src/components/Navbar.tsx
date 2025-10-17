@@ -25,7 +25,7 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center cursor-pointer" onClick={() => onNavigate('home')}>
             <BookOpen className="h-8 w-8 text-blue-600" />
-            <span className="ml-2 text-xl font-bold text-slate-800">ElevateTraining</span>
+            <span className="ml-2 text-xl font-bold text-slate-800">CLICK</span>
           </div>
 
           <div className="hidden md:flex items-center space-x-1">

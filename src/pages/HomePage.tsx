@@ -66,13 +66,17 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-slate-900 text-white pt-32 pb-20">
         <div className="absolute inset-0 bg-black opacity-10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              Empowering Teams.<br />Enhancing Performance.
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 text-blue-100">
-              Transform your workforce with world-class corporate training solutions designed for the modern enterprise
-            </p>
+          <div className="text-left max-w-4xl mx-auto justify-left">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+                  <span className="text-white">"We are committed to </span>
+                  <span className="text-accent-gold">building your career</span>
+                  <span className="text-white"> and </span>
+                  <span className="text-accent-gold">amplifying your growth</span>
+                  <span className="text-white">."</span>  
+                </h1>
+            <p className="text-xl md:text-2xl font-semibold text-white/90 mb-8">
+                  – Krishna & Sameer, Founders of CLICK
+                </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={() => onNavigate('contact')}
