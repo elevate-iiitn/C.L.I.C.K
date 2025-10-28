@@ -1,5 +1,4 @@
 import { ArrowRight, Users, Award, TrendingUp, CheckCircle, Star, BarChart } from 'lucide-react';
-
 interface HomePageProps {
   onNavigate: (page: string) => void;
 }
