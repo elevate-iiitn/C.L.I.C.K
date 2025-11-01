@@ -74,6 +74,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
                   <span className="text-yellow-400">growth </span>
                   <span className="text-white">."</span>  
                 </h1>
+                
             <p className="text-xl md:text-2xl font-semibold text-white/90 mb-8">
                   – Krishna & Sameer, Founders of CLICK
                 </p>
@@ -90,9 +91,17 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               >
                 Explore Programs <ArrowRight className="ml-2 h-5 w-5" />
               </button>
+              
             </div>
+            
           </div>
+          
         </div>
+       <img
+  src="/images/krishna.png"
+  alt="Krishna"
+  className="absolute right-0 top-1/2 -translate-y-1/2 w-[450px] object-contain"
+/>
         <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"></div>
       </section>
 
