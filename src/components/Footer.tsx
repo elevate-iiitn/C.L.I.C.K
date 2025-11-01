@@ -12,7 +12,7 @@ export default function Footer({ onNavigate }: FooterProps) {
           <div>
             <div className="flex items-center mb-4">
               <BookOpen className="h-8 w-8 text-blue-400" />
-              <span className="ml-2 text-xl font-bold text-white">ElevateTraining</span>
+              <span className="ml-2 text-xl font-bold text-white">C.L.I.C.K</span>
             </div>
             <p className="text-sm mb-4">
               Empowering teams and enhancing performance through world-class corporate training solutions.
@@ -65,7 +65,7 @@ export default function Footer({ onNavigate }: FooterProps) {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start">
                 <Mail className="h-5 w-5 mr-2 flex-shrink-0 mt-0.5" />
-                <span>contact@elevatetraining.com</span>
+                <span>contact@C.L.I.C.K.com</span>
               </li>
               <li className="flex items-start">
                 <Phone className="h-5 w-5 mr-2 flex-shrink-0 mt-0.5" />
@@ -80,7 +80,7 @@ export default function Footer({ onNavigate }: FooterProps) {
         </div>
 
         <div className="border-t border-slate-800 mt-8 pt-8 text-sm text-center">
-          <p>&copy; 2025 ElevateTraining. All rights reserved.</p>
+          <p>&copy; 2025 C.L.I.C.K. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -44,7 +44,7 @@ export default function ContactPage() {
     {
       icon: <Mail className="h-6 w-6 text-blue-600" />,
       title: 'Email Us',
-      detail: 'contact@elevatetraining.com',
+      detail: 'contact@C.L.I.C.K.com',
       subdDetail: 'We respond within 24 hours',
     },
     {
@@ -378,7 +378,7 @@ export default function ContactPage() {
               <div className="h-64 bg-slate-700 rounded-lg flex items-center justify-center text-4xl mb-6">
                 🗺️
               </div>
-              <p className="text-lg font-semibold mb-2">ElevateTraining Headquarters</p>
+              <p className="text-lg font-semibold mb-2">C.L.I.C.K Headquarters</p>
               <p className="text-slate-300">123 Business Park, MG Road</p>
               <p className="text-slate-300">Bangalore, Karnataka 560001, India</p>
             </div>

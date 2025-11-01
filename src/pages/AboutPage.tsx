@@ -68,7 +68,7 @@ export default function AboutPage() {
       <section className="bg-gradient-to-r from-slate-900 to-slate-800 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <h1 className="text-5xl font-bold mb-6">About ElevateTraining</h1>
+            <h1 className="text-5xl font-bold mb-6">About C.L.I.C.K</h1>
             <p className="text-xl text-slate-300 leading-relaxed">
               We are a passionate team of learning and development professionals dedicated to transforming
               organizational performance through innovative, outcome-focused training solutions.
@@ -84,7 +84,7 @@ export default function AboutPage() {
               <h2 className="text-4xl font-bold text-slate-900 mb-6">Our Story</h2>
               <div className="space-y-4 text-lg text-slate-700 leading-relaxed">
                 <p>
-                  Founded in 2010, ElevateTraining emerged from a simple observation: traditional corporate
+                  Founded in 2010, C.L.I.C.K emerged from a simple observation: traditional corporate
                   training was failing to deliver real, measurable results. Organizations were investing
                   heavily in training programs, but employees returned to work unchanged.
                 </p>

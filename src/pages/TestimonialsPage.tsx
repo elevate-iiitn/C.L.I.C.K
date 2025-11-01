@@ -7,7 +7,7 @@ interface TestimonialsPageProps {
 export default function TestimonialsPage({ onNavigate }: TestimonialsPageProps) {
   const testimonials = [
     {
-      quote: 'ElevateTraining completely transformed our leadership team. The facilitators brought real-world experience and practical tools that our managers could apply immediately. Within three months, we saw measurable improvements in team engagement and productivity.',
+      quote: 'C.L.I.C.K completely transformed our leadership team. The facilitators brought real-world experience and practical tools that our managers could apply immediately. Within three months, we saw measurable improvements in team engagement and productivity.',
       author: 'Rajesh Kumar',
       position: 'HR Director',
       company: 'Tech Solutions Ltd',
@@ -25,7 +25,7 @@ export default function TestimonialsPage({ onNavigate }: TestimonialsPageProps) 
       image: '👩‍💼',
     },
     {
-      quote: 'We partnered with ElevateTraining for a custom leadership development program. Their team took time to understand our culture and challenges, delivering a program that felt tailor-made. The ROI has been exceptional.',
+      quote: 'We partnered with C.L.I.C.K for a custom leadership development program. Their team took time to understand our culture and challenges, delivering a program that felt tailor-made. The ROI has been exceptional.',
       author: 'Amit Patel',
       position: 'VP Operations',
       company: 'Global Logistics Corp',
@@ -43,7 +43,7 @@ export default function TestimonialsPage({ onNavigate }: TestimonialsPageProps) 
       image: '👩‍💼',
     },
     {
-      quote: 'ElevateTraining helped us navigate a major digital transformation. Their change management and leadership programs equipped our middle managers to lead their teams through uncertainty with confidence.',
+      quote: 'C.L.I.C.K helped us navigate a major digital transformation. Their change management and leadership programs equipped our middle managers to lead their teams through uncertainty with confidence.',
       author: 'Vikram Singh',
       position: 'Managing Director',
       company: 'Heritage Bank',
@@ -298,7 +298,7 @@ export default function TestimonialsPage({ onNavigate }: TestimonialsPageProps) 
           <Award className="h-16 w-16 mx-auto mb-6" />
           <h2 className="text-4xl font-bold mb-6">Ready to Write Your Success Story?</h2>
           <p className="text-xl text-blue-100 mb-8">
-            Join the organizations that have transformed their workforce with ElevateTraining
+            Join the organizations that have transformed their workforce with C.L.I.C.K
           </p>
           <button
             onClick={() => onNavigate('contact')}

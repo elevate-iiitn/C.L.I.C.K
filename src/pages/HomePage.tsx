@@ -47,7 +47,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
 
   const testimonials = [
     {
-      quote: 'ElevateTraining transformed our leadership team. The results were visible within weeks.',
+      quote: 'C.L.I.C.K transformed our leadership team. The results were visible within weeks.',
       author: 'Rajesh Kumar',
       position: 'HR Director, Tech Solutions Ltd',
       rating: 5,
@@ -122,7 +122,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-slate-900 mb-4">Why Choose ElevateTraining</h2>
+            <h2 className="text-4xl font-bold text-slate-900 mb-4">Why Choose C.L.I.C.K</h2>
             <p className="text-xl text-slate-600 max-w-2xl mx-auto">
               We deliver measurable results through innovative training methodologies
             </p>
@@ -218,7 +218,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-6">Ready to Transform Your Team?</h2>
           <p className="text-xl mb-8 text-blue-100">
-            Join 50+ leading organizations that trust ElevateTraining for their workforce development needs
+            Join 50+ leading organizations that trust C.L.I.C.K for their workforce development needs
           </p>
           <button
             onClick={() => onNavigate('contact')}
