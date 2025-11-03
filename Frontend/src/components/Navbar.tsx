@@ -50,27 +50,15 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
           <div className="flex justify-between items-center h-full">
             {/* Logo */}
-            <div 
+            <div
               className="flex items-center cursor-pointer group"
               onClick={() => onNavigate('home')}
             >
-              <div className="relative">
-                <BookOpen className="h-8 w-8 text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-violet-600 bg-clip-text transition-transform duration-300 group-hover:scale-110" 
-                  style={{ stroke: 'url(#logo-gradient)' }}
-                />
-                <svg width="0" height="0">
-                  <defs>
-                    <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#22d3ee" />
-                      <stop offset="50%" stopColor="#3b82f6" />
-                      <stop offset="100%" stopColor="#8b5cf6" />
-                    </linearGradient>
-                  </defs>
-                </svg>
-              </div>
-              <span className="ml-3 text-2xl font-bold bg-gradient-to-r from-cyan-400 via-blue-500 to-violet-600 bg-clip-text text-transparent tracking-tight">
-                CLICK
-              </span>
+              <img
+                src="/images/click_logo.png"
+                alt="CLICK Logo"
+                className="h-20 w-auto transition-transform duration-300 group-hover:scale-110"
+              />
             </div>
 
             {/* Desktop Navigation */}
