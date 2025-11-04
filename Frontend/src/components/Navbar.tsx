@@ -20,11 +20,36 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const smoothScrollTo = (targetPosition: number, duration: number = 1000) => {
+    const startPosition = window.pageYOffset;
+    const distance = targetPosition - startPosition;
+    let startTime: number | null = null;
+
+    const animation = (currentTime: number) => {
+      if (startTime === null) startTime = currentTime;
+      const timeElapsed = currentTime - startTime;
+      const progress = Math.min(timeElapsed / duration, 1);
+
+      // Easing function (ease-in-out cubic)
+      const easeInOutCubic = progress < 0.5
+        ? 4 * progress * progress * progress
+        : 1 - Math.pow(-2 * progress + 2, 3) / 2;
+
+      window.scrollTo(0, startPosition + distance * easeInOutCubic);
+
+      if (progress < 1) {
+        requestAnimationFrame(animation);
+      }
+    };
+
+    requestAnimationFrame(animation);
+  };
+
   const navItems = [
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
     { id: 'services', label: 'Services', hasDropdown: true },
-    { id: 'testimonials', label: 'Testimonials' },
+    { id: 'testimonials', label: 'Testimonials', scrollTo: true },
     { id: 'blog', label: 'Blog' },
     { id: 'contact', label: 'Contact' },
   ];
@@ -120,7 +145,19 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
                     </div>
                   ) : (
                     <button
-                      onClick={() => onNavigate(item.id)}
+                      onClick={() => {
+                        if (item.scrollTo && currentPage === 'home') {
+                          const element = document.getElementById(item.id);
+                          if (element) {
+                            const navbar = document.querySelector('nav');
+                            const navbarHeight = navbar ? navbar.offsetHeight : 0;
+                            const elementPosition = element.getBoundingClientRect().top + window.pageYOffset - navbarHeight - 20;
+                            smoothScrollTo(elementPosition);
+                          }
+                        } else {
+                          onNavigate(item.id);
+                        }
+                      }}
                       className={`px-4 py-2 rounded-lg text-sm font-medium tracking-tight transition-all duration-300 relative group ${
                         currentPage === item.id
                           ? 'text-white'
@@ -220,8 +257,19 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
               ) : (
                 <button
                   onClick={() => {
-                    onNavigate(item.id);
-                    setIsMenuOpen(false);
+                    if (item.scrollTo && currentPage === 'home') {
+                      const element = document.getElementById(item.id);
+                      if (element) {
+                        const navbar = document.querySelector('nav');
+                        const navbarHeight = navbar ? navbar.offsetHeight : 0;
+                        const elementPosition = element.getBoundingClientRect().top + window.pageYOffset - navbarHeight - 20;
+                        smoothScrollTo(elementPosition);
+                      }
+                      setIsMenuOpen(false);
+                    } else {
+                      onNavigate(item.id);
+                      setIsMenuOpen(false);
+                    }
                   }}
                   className={`w-full text-left px-4 py-3 rounded-lg text-base font-medium tracking-tight transition-all duration-300 ${
                     currentPage === item.id

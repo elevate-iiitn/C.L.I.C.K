@@ -245,7 +245,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
         </div>
       </section>
 
-      <section className="bg-background my-20 relative">
+      <section id="testimonials" className="bg-background my-20 relative">
         <div className="container z-10 mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
