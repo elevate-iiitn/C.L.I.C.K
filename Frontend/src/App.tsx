@@ -5,7 +5,6 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';
 import IndustriesPage from './pages/IndustriesPage';
-import TestimonialsPage from './pages/TestimonialsPage';
 import BlogPage from './pages/BlogPage';
 import ContactPage from './pages/ContactPage';
 
@@ -22,8 +21,6 @@ function App() {
         return <ServicesPage onNavigate={setCurrentPage} />;
       case 'industries':
         return <IndustriesPage onNavigate={setCurrentPage} />;
-      case 'testimonials':
-        return <TestimonialsPage onNavigate={setCurrentPage} />;
       case 'blog':
         return <BlogPage />;
       case 'contact':

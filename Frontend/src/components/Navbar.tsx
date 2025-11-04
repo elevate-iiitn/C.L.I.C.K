@@ -62,16 +62,20 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
 
   return (
     <>
-      <nav 
-        className={`fixed w-full top-0 z-50 transition-all duration-500 ${
-          isScrolled 
-            ? 'bg-slate-950/60 backdrop-blur-xl shadow-lg shadow-cyan-500/10' 
-            : 'bg-slate-950/40 backdrop-blur-md'
-        }`}
-        style={{
-          height: isScrolled ? '64px' : '72px',
-        }}
-      >
+      <nav
+  className={`fixed w-full top-0 z-50 transition-all duration-500 ${
+    isScrolled
+      ? 'bg-[#1b378b] shadow-lg shadow-[#1b378b]/40'
+      : 'bg-transparent'
+  }`}
+  style={{
+    height: isScrolled ? '64px' : '72px',
+  }}
+>
+
+
+
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
           <div className="flex justify-between items-center h-full">
             {/* Logo */}

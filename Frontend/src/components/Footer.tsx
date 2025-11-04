@@ -1,4 +1,4 @@
-import { BookOpen, Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from 'lucide-react';
 
 interface FooterProps {
   onNavigate: (page: string) => void;
@@ -11,17 +11,20 @@ export default function Footer({ onNavigate }: FooterProps) {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center mb-4">
-              <BookOpen className="h-8 w-8 text-blue-400" />
-              <span className="ml-2 text-xl font-bold text-white">C.L.I.C.K</span>
+              <img
+                src="/images/click_logo.png"
+                alt="CLICK Logo"
+                className="h-20 w-auto mr-4"
+              />
+              <div className="flex space-x-4">
+                <Linkedin className="h-5 w-5 cursor-pointer hover:text-blue-400 transition-colors" />
+                <Twitter className="h-5 w-5 cursor-pointer hover:text-blue-400 transition-colors" />
+                <Facebook className="h-5 w-5 cursor-pointer hover:text-blue-400 transition-colors" />
+              </div>
             </div>
             <p className="text-sm mb-4">
               Empowering teams and enhancing performance through world-class corporate training solutions.
             </p>
-            <div className="flex space-x-4">
-              <Linkedin className="h-5 w-5 cursor-pointer hover:text-blue-400 transition-colors" />
-              <Twitter className="h-5 w-5 cursor-pointer hover:text-blue-400 transition-colors" />
-              <Facebook className="h-5 w-5 cursor-pointer hover:text-blue-400 transition-colors" />
-            </div>
           </div>
 
           <div>
@@ -43,7 +46,7 @@ export default function Footer({ onNavigate }: FooterProps) {
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('testimonials')} className="hover:text-blue-400 transition-colors">
+                <button onClick={() => onNavigate('home')} className="hover:text-blue-400 transition-colors">
                   Success Stories
                 </button>
               </li>

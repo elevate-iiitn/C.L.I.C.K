@@ -4,11 +4,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        'accent-gold': '#FFD700',
-        'midnight-blue': '#0a0a33',
-        'soft-gray': '#f5f5f5',
-        
-        
+        'color-1': '#ece98f',
+        'color-2': '#dee682',
+        'color-3': '#c6e388',
+        'color-4': '#aade85',
+        'color-5': '#8ed881',
       },
     },
   },
